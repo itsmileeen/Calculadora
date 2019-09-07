@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script type="javascript" src="js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+</head>
+<body BGCOLOR="#E0FFE0" text="green" link="blue" vlink="brown">
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+				
+					<h1 class="page-header">CALCULADORA</h1>
+					<br>
+					<br>
+					<form action="CalculadoraServlet" method="POST">
+						<table border="3" width="400">
+							<tr>
+								<td align="right">
+									<input type="text" name="operando1">
+								</td>
+								<td>
+									<select name="operacion">
+										<option value="1" selected>&nbsp;&nbsp;+&nbsp;</option>
+										<option value="2" selected>&nbsp;&nbsp;-&nbsp;&nbsp;</option>
+										<option value="3" selected>&nbsp;&nbsp;*&nbsp;&nbsp;</option>
+										<option value="4" selected>&nbsp;&nbsp;/&nbsp;&nbsp;</option>
+									</select>
+								</td>
+								<td align="right">
+									<input type="text" name="operando2">
+								</td>
+							</tr>
+						</table>
+						<br>
+						<br>
+						<input name="calcular" value="Calcular" type="submit">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input name="limpiar" value="Limpiar" type="reset">
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
